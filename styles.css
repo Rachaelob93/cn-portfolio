@@ -1,0 +1,145 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;
+    height: 100vh;
+    color: #000000;
+
+
+}
+h1, h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-size: 60px;
+}
+
+p{
+    color: #ffffff;
+}
+
+.main-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: fit-content;
+     background-color: #817672;
+     border-radius: 14px;
+     margin: 50px;
+     padding: 50px 0;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mini-bio{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-top: -25px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.profile-img{
+    height: 150px;
+    transform:rotate(45deg);
+    margin-bottom: 50px;
+
+}
+.hero-container h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.cv{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.cv:hover{
+    color: rgba(255, 255, 255, 0.411);
+}
+
+.portfolio-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+.portfolio-item{
+    width: 300px;
+    height: auto;
+    position: relative;
+}
+
+.portfolio-div a {
+    position: relative;
+}
+.portfolio-div a:hover::after {
+    content:"";
+    display: block;
+    height: 98%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.363);
+    top:0px;
+    left:0px;
+    position: absolute;
+}
+.item-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    border-style: dotted none none none;
+    width: 55px;
+    border-top-width: 7px;
+    color: #EAF6F6;
+    margin: 50px;
+}
+
+.contact-div a{
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+color: #ffff;
+}
+
+.contact-div a:hover{
+    color: rgba(255, 255, 255, 0.411)
+}
+
+.contact-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bio {
+    margin: auto;
+    margin-bottom: 100px;
+    width: 50%;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+@media only screen and (max-width: 1129px) {
+    .portfolio-div{
+        flex-direction: column;
+    }
+    .item-card{
+        margin-bottom: 50px;
+    }
+
+}
